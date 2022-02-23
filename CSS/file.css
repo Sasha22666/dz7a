@@ -1,0 +1,91 @@
+/* задаются стили для широких окон отображения */
+.zagolovki1 {
+    color: blue;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 2;
+    background-color: #ADD8E6;
+    clear: both
+}
+
+.zagolovki2 {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.sodergimoe {
+    background: url(/yellow.gif) left top repeat-y, url(/boll.png) right top repeat-y;
+}
+
+.sodergimoe:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.menu {
+    width: 150px;
+    float: left
+}
+
+div.tekst {
+    margin-left: 200px;
+    padding-top: 1px
+}
+
+div.kartinka {
+    content: url(/fotball2.png);
+    float: left;
+    margin-right: 15px;
+}
+
+/* задаются стили для окон отображения как у планшета */
+@media all and (max-width: 800px) {
+    div.zagolovki1 {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    div.tekst div.kartinka {
+        float: none;
+        width: 100%;
+    }
+
+    div.sodergimoe {
+        background: url(/yellow.gif) left top repeat-y;
+    }
+}
+
+/* задаются стили для окон отображения как у мобильных устройств */
+@media all and (max-width: 400px) {
+    div.zagolovki1 {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    div.sodergimoe {
+        background: none;
+    }
+
+    div.tekst div.kartinka {
+        float: none;
+        width: 100%;
+    }
+
+    div.menu {
+        float: none;
+        visibility: hidden;
+        height: 0px;
+    }
+
+    div.tekst {
+
+        margin-left: 0px;
+    } 
+}
