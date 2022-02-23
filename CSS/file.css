@@ -16,7 +16,7 @@
 }
 
 .sodergimoe {
-    background: url(/yellow.gif) left top repeat-y, url(/boll.png) right top repeat-y;
+    background: url(dz7a/yellow.gif) left top repeat-y, url(dz7a/boll.png) right top repeat-y;
 }
 
 .sodergimoe:after {
@@ -38,7 +38,7 @@ div.tekst {
 }
 
 div.kartinka {
-    content: url(/fotball2.png);
+    content: url(dz7a/fotball2.png);
     float: left;
     margin-right: 15px;
 }
@@ -57,7 +57,7 @@ div.kartinka {
     }
 
     div.sodergimoe {
-        background: url(/yellow.gif) left top repeat-y;
+        background: url(dz7a/yellow.gif) left top repeat-y;
     }
 }
 
